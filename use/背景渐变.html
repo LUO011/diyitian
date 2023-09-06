@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		body {
+			height: 100%;
+			background-color: blue;
+			/* 浏览器不支持时显示 */
+			/* background-image: linear-gradient(90deg, #2980b7, skyblue, rgb(0, 183, 255)); */
+			/* background-image: linear-gradient(to right, red, green, blue); */
+			background-image: linear-gradient(90deg, #2c3e50, #27ae60, #2980b7, #e74c3c, #8e44ad);
+			background-size: 9999%;
+			animation: bgmove 10s infinite;
+		}
+
+		@keyframes bgmove {
+			0% {
+				background-position: 0% 50%;
+			}
+
+			50% {
+				background-position: 100% 50%;
+			}
+
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+
+		h1 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 30px;
+			text-shadow: 0 0 10px black;
+			text-align: center;
+			/* background-color: rgba(255,255,255,.1); */
+			/* border: 1px solid rgba(0,0,0,.1); */
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Background Animation</h1>
+
+</body>
+
+</html>
